@@ -1,6 +1,6 @@
 ## Android Five Stars Library
 
-Android Five Stars Library is a small library that helps developers add a **"Rate My App"** dialog to their applications.
+Android Five Stars Library is a small library that helps developers add a **"Rate My App"** dialog to their applications. Originally created by Angtrim and modified by me.
 
 It's called "Five Stars" because the dialog has a different behaviour based on the rating given by the user.
 
@@ -31,7 +31,7 @@ To use the library, first include it your project using Gradle
     }
 
 	dependencies {
-	        compile 'com.github.mkaflowski:Android-Five-Stars-Library:v3.3'
+	        compile 'com.github.mkaflowski:Android-Five-Stars-Dialog-Library:v3.4'
 	}
 
 
@@ -51,6 +51,7 @@ Example:
                 .setStyle(R.style.DialogTheme) // set theme from styles.xml
                 .setUpperBound(2) // Market opened if a rating >= 2 is selected
                 .setInternational()
+                .setShowOnZeroStars(true) //open market on zero stars after positive button clicked
                 .setNegativeReviewListener(this) // OVERRIDE mail intent for negative review
                 .setReviewListener(this) // Used to listen for reviews (if you want to track them )
                 .showAfter(0);
