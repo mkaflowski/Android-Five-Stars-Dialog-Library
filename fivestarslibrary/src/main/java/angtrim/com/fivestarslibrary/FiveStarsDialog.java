@@ -83,7 +83,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
                 Log.d(TAG, "Rating changed : " + v);
-                if (isForceMode && v >= upperBound) {
+                if (isForceMode && (v >= upperBound || v == 0)) {
                     openMarket();
                     if (reviewListener != null)
                         reviewListener.onReview((int) ratingBar.getRating());
@@ -162,7 +162,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
     @Override
     public void onClick(DialogInterface dialogInterface, int i) {
         if (i == DialogInterface.BUTTON_POSITIVE) {
-            if (ratingBar.getRating() < upperBound) {
+            if (ratingBar.getRating() < upperBound && ratingBar.getRating()  > 0) {
                 if (negativeReviewListener == null) {
                     sendEmail();
                 } else {

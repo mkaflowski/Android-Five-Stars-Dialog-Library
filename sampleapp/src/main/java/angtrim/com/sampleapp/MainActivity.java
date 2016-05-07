@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity implements NegativeReviewLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FiveStarsDialog fiveStarsDialog = new FiveStarsDialog(this,"angelo.gallarello@gmail.com");
+        FiveStarsDialog fiveStarsDialog = new FiveStarsDialog(this,"destpstrzy@gmail.com");
         fiveStarsDialog.setRateText("Your custom text")
                 .setTitle("Your custom title")
                 .setStyle(R.style.DialogTheme)
                 .setForceMode(false)
-                .setUpperBound(2)
+                .setUpperBound(3)
                 .setNegativeReviewListener(this)
                 .setReviewListener(this)
                 .showAfter(0);
