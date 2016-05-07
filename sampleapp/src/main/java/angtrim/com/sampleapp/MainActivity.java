@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements NegativeReviewLis
                 .setForceMode(true)
                 .setUpperBound(3)
                 .setShowOnZeroStars(true)
-                .showAfter(3);
+                .forceShow();
 
     }
 
