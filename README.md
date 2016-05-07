@@ -31,7 +31,7 @@ To use the library, first include it your project using Gradle
     }
 
 	dependencies {
-	        compile 'com.github.mkaflowski:Android-Five-Stars-Dialog-Library:v3.4'
+	        compile 'com.github.mkaflowski:Android-Five-Stars-Dialog-Library:v3.4.2'
 	}
 
 
