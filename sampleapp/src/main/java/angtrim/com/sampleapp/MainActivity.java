@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements NegativeReviewLis
                 .setStyle(R.style.DialogTheme)
                 .setForceMode(false)
                 .setUpperBound(3)
+                .setShowOnZeroStars(true)
                 .setNegativeReviewListener(this)
                 .setReviewListener(this)
                 .showAfter(0);

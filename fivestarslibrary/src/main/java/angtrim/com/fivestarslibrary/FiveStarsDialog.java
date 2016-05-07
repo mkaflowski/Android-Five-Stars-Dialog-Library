@@ -14,9 +14,6 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 
-/**
- * Created by angtrim on 12/09/15.
- */
 public class FiveStarsDialog implements DialogInterface.OnClickListener {
 
     private static String DEFAULT_TITLE = "Rate this app";
@@ -47,6 +44,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
     private int upperBound = 4;
     private NegativeReviewListener negativeReviewListener;
     private ReviewListener reviewListener;
+    private boolean showOnZeroStars = false;
 
     //test
 
@@ -162,7 +160,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
     @Override
     public void onClick(DialogInterface dialogInterface, int i) {
         if (i == DialogInterface.BUTTON_POSITIVE) {
-            if (ratingBar.getRating() < upperBound && ratingBar.getRating()  > 0) {
+            if (ratingBar.getRating() < upperBound && ratingBar.getRating() > 0 || (ratingBar.getRating() == 0 && !showOnZeroStars)) {
                 if (negativeReviewListener == null) {
                     sendEmail();
                 } else {
@@ -192,6 +190,11 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
      */
     public FiveStarsDialog setStyle(int styleR) {
         style = styleR;
+        return this;
+    }
+
+    public FiveStarsDialog setShowOnZeroStars(boolean showOnZeroStars) {
+        this.showOnZeroStars = showOnZeroStars;
         return this;
     }
 
