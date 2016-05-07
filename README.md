@@ -1,6 +1,6 @@
 ## Android Five Stars Library
 
-Android Five Stars Library is a small library that helps developers add a **"Rate My App"** dialog to their applications. Originally created by Angtrim and modified by me.
+Android Five Stars Library is a small library that helps developers add a **"Rate My App"** dialog to their applications. Originally created by Angtrim and modified by Mateusz Kaflowski.
 
 It's called "Five Stars" because the dialog has a different behaviour based on the rating given by the user.
 
