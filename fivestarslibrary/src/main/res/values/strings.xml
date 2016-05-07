@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FiveStarsLibrary</string>
+    <string name="title_rate">Rate this app</string>
+    <string name="text">How much do you like our app?</string>
+    <string name="ok">Ok</string>
+    <string name="not_now">Later</string>
+    <string name="never">Never</string>
+</resources>

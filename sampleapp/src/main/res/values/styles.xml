@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#db95fa</item>
+        <item name="colorPrimaryDark">#db95fa</item>
+        <item name="colorAccent">#db95fa</item>
+        <item name="android:textColor">#db95fa</item>
+
+    </style>
+
+</resources>
