@@ -24,12 +24,10 @@ public class MainActivity extends AppCompatActivity implements NegativeReviewLis
         fiveStarsDialog.setRateText("Your custom text")
                 .setTitle("Your custom title")
                 .setStyle(R.style.DialogTheme)
-                .setForceMode(false)
+                .setForceMode(true)
                 .setUpperBound(3)
                 .setShowOnZeroStars(true)
-                .setNegativeReviewListener(this)
-                .setReviewListener(this)
-                .showAfter(0);
+                .showAfter(3);
 
     }
 

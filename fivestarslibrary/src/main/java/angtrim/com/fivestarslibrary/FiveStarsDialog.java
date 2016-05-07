@@ -145,6 +145,11 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
         }
     }
 
+    public void forceShow() {
+            build();
+            alertDialog.show();
+    }
+
     public void showAfter(int numberOfAccess) {
         build();
         SharedPreferences.Editor editor = sharedPrefs.edit();
